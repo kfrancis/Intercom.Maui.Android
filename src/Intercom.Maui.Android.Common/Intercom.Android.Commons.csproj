@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0-android</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <AndroidLibrary Remove="Jars\android-commons-2.0.0.aar" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Jars\android-commons-2.0.0.aar" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidExternalJavaLibrary Include="Jars\android-commons-2.0.0.aar" />
+  </ItemGroup>
+</Project>
